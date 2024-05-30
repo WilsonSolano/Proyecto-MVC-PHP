@@ -8,8 +8,8 @@
         </div>
       </div>
       <br>
-
-      <div class="card">
+    <form action="<?php echo '?c='.base64_encode('Usuario').'&a='.base64_encode('Entrar')?>" method="post">
+            <div class="card">
         <div class="card-header bg-success text-white">
           Inicio de sesión
         </div>
@@ -31,5 +31,7 @@
         </div>
       </div>
       <br>
+    </form>
+
 
 <!-- pie -->
