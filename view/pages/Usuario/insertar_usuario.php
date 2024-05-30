@@ -1,5 +1,5 @@
 <div class="container">
-            <h3 class="display-7 text-center mb-4 mt-3">Registrar un Cliente</h3>
+            <h3 class="display-7 text-center mb-4 mt-3">Registrar un Usuario</h3>
 
             <div class="input-group mb-2">
                 <span class="input-group-text" id="basic-addon1">Nombres:</span>
