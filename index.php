@@ -26,6 +26,7 @@
         #decodificar el controller
         $controller = base64_decode($_REQUEST['c']);
 
+
         $accion = isset($_REQUEST['a']) ? base64_decode($_REQUEST['a']) : 'Index';
 
         #call of controller

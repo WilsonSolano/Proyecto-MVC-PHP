@@ -16,10 +16,8 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle fw-semibold fs-5 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Talla Clientes</a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Crear Talla Cliente</a></li>
-                    <li><a class="dropdown-item" href="#">Leer Tallas Clientes</a></li>
-                    <li><a class="dropdown-item" href="#">Actualizar Talla Cliente</a></li>
-                    <li><a class="dropdown-item" href="#">Eliminar Talla Cliente</a></li>
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('TallaCliente')?>">Ver Datos</a></li>
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('TallaCliente').'& a='.base64_encode("insertar")?>">Insertar nueva Talla CLiente</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">

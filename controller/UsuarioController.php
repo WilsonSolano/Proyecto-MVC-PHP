@@ -1,5 +1,5 @@
 <?php
-    class TallaController
+    class UsuarioController
     {
         public function Index()
         {
