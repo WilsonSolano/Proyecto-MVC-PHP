@@ -11,7 +11,7 @@
         <div class="container">
             <ul class="nav nav-pills">
             <li class="nav-item">
-                <a class="nav-link fw-semibold fs-5 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#"> DAW </a>
+                <a class="nav-link fw-semibold fs-5 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="?c=<?php echo base64_encode('Home')?>"> DAW </a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle fw-semibold fs-5 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Talla Clientes</a>
