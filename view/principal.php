@@ -1,5 +1,5 @@
 <!-- encabezado -->
-    <br>
+<br>
     <div class="container">
       <div class="card">
         <div class="card-body">
@@ -20,7 +20,7 @@
             <div class="col-4">
               <div class="card">
                 <div class="card-body">
-                  <a class="icon-link text-success" href="#">
+                  <a class="icon-link text-success" href="?c=<?php echo base64_encode('Cliente'); ?>">
                     <i class="bi-person-arms-up text-success" style="font-size: 4rem;"></i>
                     Cliente
                 </a>
@@ -32,7 +32,7 @@
             <div class="col-4">
               <div class="card">
                 <div class="card-body">
-                  <a class="icon-link text-success" href="#">
+                  <a class="icon-link text-success" href="?c=<?php echo base64_encode('Talla'); ?>">
                     <i class="bi-file-earmark-font-fill text-success" style="font-size: 4rem;"></i>
                     Talla
                 </a>
@@ -44,7 +44,7 @@
             <div class="col-4">
               <div class="card">
                 <div class="card-body">
-                  <a class="icon-link text-success" href="#">
+                  <a class="icon-link text-success" href="?c=<?php echo base64_encode('Color'); ?>">
                     <i class="bi-palette-fill text-success" style="font-size: 4rem;"></i>
                     Color
                 </a>
