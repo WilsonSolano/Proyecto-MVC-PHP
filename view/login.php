@@ -3,8 +3,8 @@
     <br>
     <div class="container">
       <div class="card">
-        <div class="card-body">
-          <h1>Nombre del proyecto</h1>
+        <div class="card-body text-center">
+          <h1>Clothing Store</h1>
         </div>
       </div>
       <br>

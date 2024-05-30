@@ -13,6 +13,7 @@
             
         public function Index(){
             //llama la vista login
+            require_once 'view/pages/include/header_login.php'; 
             require_once 'view/login.php';
             require_once 'view/pages/include/footer.php'; 
             
