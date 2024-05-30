@@ -19,7 +19,7 @@
             </div>
 
             <select class="form-select" aria-label="Default select example">
-                <option value selected disabled>Tipo de Usuario</option>
+                <option value selected disabled>Tipo de cliente</option>
                 <option value="1">Pro</option>
                 <option value="0">No pro</option>
             </select>
