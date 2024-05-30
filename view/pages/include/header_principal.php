@@ -65,7 +65,7 @@
                 </ul>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle fw-semibold fs-5 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">PreguntaSecreta</a>
+                <a class="nav-link dropdown-toggle fw-semibold fs-5 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Cliente</a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Cliente')?>">Crear Cliente</a></li>
                     <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Cliente')?>">Leer Clientes</a></li>
