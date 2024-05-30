@@ -8,36 +8,65 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary m-4">
-            <div class="container-fluid">
-            <a class="navbar-brand" href="#">Proyecto</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Tallas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Talla Clientes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Tipos de Usuario</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Usuarios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Cliente</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Color</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">PreguntaSecreta</a>
-                </li>
+        <div class="container">
+            <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link fw-semibold fs-5 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Tallas</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fw-semibold fs-5 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Talla Clientes</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Crear Talla Cliente</a></li>
+                    <li><a class="dropdown-item" href="#">Leer Tallas Clientes</a></li>
+                    <li><a class="dropdown-item" href="#">Actualizar Talla Cliente</a></li>
+                    <li><a class="dropdown-item" href="#">Eliminar Talla Cliente</a></li>
                 </ul>
-            </div>
-            </div>
-        </nav>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fw-semibold fs-5 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Tipos de Usuario</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Crear Tipo de Usuario</a></li>
+                    <li><a class="dropdown-item" href="#">Leer Tipos de Usuario</a></li>
+                    <li><a class="dropdown-item" href="#">Actualizar Tipo de Usuario</a></li>
+                    <li><a class="dropdown-item" href="#">Eliminar Tipo de Usuario</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fw-semibold fs-5 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Usuarios</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Crear Usuario</a></li>
+                    <li><a class="dropdown-item" href="#">Leer Usuarios</a></li>
+                    <li><a class="dropdown-item" href="#">Actualizar Usuario</a></li>
+                    <li><a class="dropdown-item" href="#">Eliminar Usuario</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fw-semibold fs-5 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Cliente</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Crear Cliente</a></li>
+                    <li><a class="dropdown-item" href="#">Leer Clientes</a></li>
+                    <li><a class="dropdown-item" href="#">Actualizar Cliente</a></li>
+                    <li><a class="dropdown-item" href="#">Eliminar Cliente</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fw-semibold fs-5 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Color</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Crear Color</a></li>
+                    <li><a class="dropdown-item" href="#">Leer Colores</a></li>
+                    <li><a class="dropdown-item" href="#">Actualizar Color</a></li>
+                    <li><a class="dropdown-item" href="#">Eliminar Color</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fw-semibold fs-5 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">PreguntaSecreta</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Crear Pregunta Secreta</a></li>
+                    <li><a class="dropdown-item" href="#">Leer Preguntas Secretas</a></li>
+                    <li><a class="dropdown-item" href="#">Actualizar Pregunta Secreta</a></li>
+                    <li><a class="dropdown-item" href="#">Eliminar Pregunta Secreta</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
