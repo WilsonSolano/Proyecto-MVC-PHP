@@ -1,3 +1,4 @@
+<div class="container">
             <h3 class="display-7 text-center mb-4 mt-3">Registrar un Cliente</h3>
 
             <div class="input-group mb-2">
@@ -45,4 +46,5 @@
                 <option value="0">No pro</option>
             </select>
 
-            <input class="btn btn-primary" type="submit" value="Insertar">
+            <input class="btn btn-primary mt-3" type="submit" value="Insertar">
+</div>

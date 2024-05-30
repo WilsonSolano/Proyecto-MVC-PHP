@@ -1,4 +1,6 @@
-            <h3 class="display-7 text-center mb-4 mt-3">Listar Usarios</h3>
+
+<div class="container">
+    <h3 class="display-7 text-center mb-4 mt-3">Listar Usarios</h3>
 
             <select class="form-select" aria-label="Default select example">
                 <option value selected disabled>Estado de la talla</option>
@@ -49,4 +51,6 @@
                 </tr>
                 </tbody>
             </table>
+
+</div>
             <!--Footer-->

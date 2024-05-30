@@ -11,7 +11,7 @@
         <div class="container">
             <ul class="nav nav-pills">
             <li class="nav-item">
-                <a class="nav-link fw-semibold fs-5 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Tallas</a>
+                <a class="nav-link fw-semibold fs-5 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#"> DAW </a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle fw-semibold fs-5 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Talla Clientes</a>
@@ -23,28 +23,27 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle fw-semibold fs-5 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Tipos de Usuario</a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Crear Tipo de Usuario</a></li>
-                    <li><a class="dropdown-item" href="#">Leer Tipos de Usuario</a></li>
-                    <li><a class="dropdown-item" href="#">Actualizar Tipo de Usuario</a></li>
-                    <li><a class="dropdown-item" href="#">Eliminar Tipo de Usuario</a></li>
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('TipoUsuario')?>">Ver Datos</a></li>
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('TipoUsuario').'& a='.base64_encode("buscarTipoUsuario")?>">Buscar un Tipo de Usuario</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle fw-semibold fs-5 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Usuarios</a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Crear Usuario</a></li>
-                    <li><a class="dropdown-item" href="#">Leer Usuarios</a></li>
-                    <li><a class="dropdown-item" href="#">Actualizar Usuario</a></li>
-                    <li><a class="dropdown-item" href="#">Eliminar Usuario</a></li>
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Usuario').'& a='.base64_encode("insertarUsuario")?>">Crear Usuario</a></li>
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Usuario')?>">Leer Usuarios</a></li>
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Usuario').'& a='.base64_encode("actualizarUsuario")?>">Actualizar Usuario</a></li>
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Usuario').'& a='.base64_encode("actualizarClaveUsuario")?>">Actualizar clave de Usuario</a></li>
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Usuario').'& a='.base64_encode("actualizarPreguntaUsuario")?>">Actualizar pregunta de Usuario</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle fw-semibold fs-5 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Cliente</a>
+                <a class="nav-link dropdown-toggle fw-semibold fs-5 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Talla</a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Crear Cliente</a></li>
-                    <li><a class="dropdown-item" href="#">Leer Clientes</a></li>
-                    <li><a class="dropdown-item" href="#">Actualizar Cliente</a></li>
-                    <li><a class="dropdown-item" href="#">Eliminar Cliente</a></li>
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Talla').'& a='.base64_encode("InsertarTalla")?>">Crear Talla</a></li>
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Talla')?>">Leer Tallas</a></li>
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Talla').'& a='.base64_encode("actualizarEstadoTalla")?>">Actualizar Estado de Talla</a></li>
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Talla').'& a='.base64_encode("actualizarTalla")?>">Actualizar Talla</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">

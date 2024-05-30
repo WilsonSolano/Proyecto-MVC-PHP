@@ -1,4 +1,5 @@
-        <h3 class="display-7 text-center mb-4 mt-3">Actualizar una Talla</h3>
+<div class="container">
+<h3 class="display-7 text-center mb-4 mt-3">Actualizar Estado de una Talla</h3>
 
         <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1">ID de la Talla: </span>
@@ -13,3 +14,4 @@
             </select>
             <input class="btn btn-primary" type="submit" value="Actualizar">
         </div>
+</div>

@@ -11,7 +11,7 @@
         </div>
         <div class="input-group mb-2">
             <span class="input-group-text" id="basic-addon1">Detalle:</span>
-            <input type="text" class="form-control" placeholder="1234" aria-label="Nombre" aria-describedby="basic-addon1">
+            <input type="text" class="form-control" placeholder="Muchas cosas interesantes" aria-label="Nombre" aria-describedby="basic-addon1">
             <input class="btn btn-primary" type="submit" value="Insertar">
         </div>
 </div>

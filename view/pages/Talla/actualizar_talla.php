@@ -1,4 +1,5 @@
     <!--Header-->
+<div class="container">
         <h3 class="display-7 text-center mb-4 mt-3">Actualizar una Talla</h3>
 
         <div class="input-group mb-3">
@@ -10,4 +11,5 @@
             <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" aria-describedby="basic-addon1">
             <input class="btn btn-primary" type="submit" value="Actualizar">
         </div>
+</div>
     <!--Foother-->

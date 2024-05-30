@@ -1,5 +1,6 @@
     <!--Header-->
-    <h3 class="display-7 text-center mb-4 mt-3">Listar Tipos de Usuario</h3>
+    <div class="container">
+        <h3 class="display-7 text-center mb-4 mt-3">Listar Tipos de Usuario</h3>
         <div class="input-group mb-2">
             <span class="input-group-text" id="basic-addon1">ID Tipo de Usuario:</span>
             <input type="text" class="form-control" placeholder="1234" aria-label="1234" aria-describedby="basic-addon1">
@@ -32,4 +33,6 @@
             </tr>
             </tbody>
         </table>
+
+    </div>
 <!--Footer-->

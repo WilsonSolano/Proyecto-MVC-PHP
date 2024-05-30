@@ -1,4 +1,5 @@
-    <h3 class="display-7 text-center mb-4 mt-3">Actualizar Pregunta secreta</h3>
+<div class="container">
+<h3 class="display-7 text-center mb-4 mt-3">Actualizar Pregunta secreta</h3>
 
 
     <div class="input-group mb-3">
@@ -15,3 +16,5 @@
     </div>
 
     <input class="btn btn-primary" type="submit" value="Actualizar Pregunta y Respuesta">
+
+</div>

@@ -1,4 +1,6 @@
     <!--Header-->
+
+<div class="container">
         <h3 class="display-7 text-center mb-4 mt-3">Listar Tipos de Usuario</h3>
 
         <table class="table">
@@ -27,4 +29,6 @@
             </tr>
             </tbody>
         </table>
+
+</div>
         <!--Footer-->
