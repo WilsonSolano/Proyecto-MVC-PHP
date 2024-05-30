@@ -122,7 +122,7 @@
         {
             try 
             {
-                $stm = $this->pdo->prepare("SELECT * FROM usuario WHERE email = ? AND clave = ? AND estado = 1");
+                $stm = $this->pdo->prepare("SELECT * FROM usuario WHERE email = ? AND clave = md5(?) AND estado = 1");
 
                 $stm->execute(array($email, $clave));
 

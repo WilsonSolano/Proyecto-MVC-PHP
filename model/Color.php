@@ -22,7 +22,7 @@
                 $sql = "INSERT INTO color(nombre) VALUES(?)";
                 $this->pdo->prepare($sql)->execute(array($data->nombre));    
             }
-            catch(throwable $t){
+            catch(\throwable $t){
                 die($t->getMessage());
             }
         }
@@ -34,7 +34,7 @@
                 $stm->execute();
 
                 return $stm->fetchAll(PDO::FETCH_OBJ);
-            } catch (Throwable $t) {
+            } catch (\Throwable $t) {
                 die($t->getMessage());
             }
         }     
@@ -46,7 +46,7 @@
                 $stm->execute();
 
                 return $stm->fetchAll(PDO::FETCH_OBJ);
-            } catch (Throwable $t) {
+            } catch (\Throwable $t) {
                 die($t->getMessage());
             }
         }       
@@ -58,7 +58,7 @@
                 $stm->execute(array($id));
 
                 return $stm->fetchAll(PDO::FETCH_OBJ);
-            } catch (Throwable $t) {
+            } catch (\Throwable $t) {
                 die($t->getMessage());
             }
         }       
@@ -69,7 +69,7 @@
                 $sql= "UPDATE color SET nombre=? WHERE idcolor=?";
                 $this->pdo->prepare($sql)->execute(array($data->nombre,$data->idcolor));
 
-            } catch (Throwable $t) {
+            } catch (\Throwable $t) {
                 die($t->getMessage());
             }
         }       
@@ -80,7 +80,7 @@
                 $sql= "UPDATE color SET estado=? WHERE idcolor=?";
                 $this->pdo->prepare($sql)->execute(array($nuevo_estado,$id));
                 
-            } catch (Throwable $t) {
+            } catch (\Throwable $t) {
                 die($t->getMessage());
             }
         } 
