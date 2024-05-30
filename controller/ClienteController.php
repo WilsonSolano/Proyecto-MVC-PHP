@@ -4,7 +4,7 @@
         public function Index()
         {
             require_once 'view/pages/include/header_principal.php';
-            require_once 'view/pages/Cliente/leerCliente.php';
+            require_once 'view/pages/Cliente/CrearCliente.php';
             require_once 'view/pages/include/footer.php';
         }
 
