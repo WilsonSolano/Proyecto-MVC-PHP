@@ -29,7 +29,7 @@
             require_once 'view/pages/include/footer.php';
         }
 
-                public function actualizarPreguntaUsuario()
+        public function actualizarPreguntaUsuario()
         {
             require_once 'view/pages/include/header_principal.php';
             require_once 'view/pages/Usuario/actualizarPregunta_usuario.php';
