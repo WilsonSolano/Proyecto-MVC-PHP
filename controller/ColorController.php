@@ -4,28 +4,28 @@
         public function Index()
         {
             require_once 'view/pages/include/header_principal.php';
-            require_once 'view/pages/Cliente/LeerCliente.php';
+            require_once 'view/pages/Color/LeerColor.php';
             require_once 'view/pages/include/footer.php';
         }
 
-        public function ActualizarCliente()
+        public function ActualizarColor()
         {
             require_once 'view/pages/include/header_principal.php';
-            require_once 'view/pages/Cliente/ActualizarCliente.php';
+            require_once 'view/pages/Color/ActualizarColor.php';
             require_once 'view/pages/include/footer.php';
         }
 
-        public function CrearCliente()
+        public function CrearColor()
         {
             require_once 'view/pages/include/header_principal.php';
-            require_once 'view/pages/Cliente/CrearCliente.php';
+            require_once 'view/pages/Color/CrearColor.php';
             require_once 'view/pages/include/footer.php';
         }
 
-        public function EliminarCliente()
+        public function EliminarColor()
         {
             require_once 'view/pages/include/header_principal.php';
-            require_once 'view/pages/Cliente/EliminarCliente.php';
+            require_once 'view/pages/Color/EliminarColor.php';
             require_once 'view/pages/include/footer.php';
         }        
     }

@@ -11,7 +11,7 @@
         {
             try {
                 $this->pdo = Conexion::Conectar();
-            } catch (Throwable $t) {
+            } catch (\Throwable $t) {
                 die($t -> getMessage());
             }
         }
@@ -23,7 +23,7 @@
                 $stm = $this->pdo->prepare("SELECT * FROM preguntasecreta");
                 $stm -> execute();
                 return $stm-> fethAll(PDO::FETCH_OBJ);
-            } catch (Throwable $t) {
+            } catch (\Throwable $t) {
                 die($t->getMessage());
             }
         }
@@ -36,7 +36,7 @@
                 $stm -> execute(array($id));
 
                 return $stm -> fetch(PDO::FETCH_OBJ);
-            } catch (Throwable $t) {
+            } catch (\Throwable $t) {
                 die($t->getMessage());
             }
         }

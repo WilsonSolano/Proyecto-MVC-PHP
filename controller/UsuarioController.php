@@ -35,5 +35,6 @@
             require_once 'view/pages/Usuario/actualizarPregunta_usuario.php';
             require_once 'view/pages/include/footer.php';
         }
+
     }
 ?>
