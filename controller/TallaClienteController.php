@@ -1,6 +1,15 @@
 <?php
+    require_once 'model/TallaCliente.php';
+
     class TallaClienteController
     {
+        private $model;
+
+        public function __CONSTRUCT()
+        {
+            $this->model = new TallaCliente();
+        }
+
         public function Index()
         {
             require_once 'view/pages/include/header_principal.php';

@@ -27,12 +27,25 @@
             }
         }
 
-        public function ObtenerTallasClientes($id)
+        public function ObtenerUnaTallasClientes($id)
         {
             try {
                 $stm = $this->pdo->prepare("SELECT tc.idtalla AS idtallacliente, t.nombre AS talla, tc.detalle AS detalle FROM tallacliente AS tc INNER JOIN talla AS t ON tc.idtalla = t.idtalla WHERE tc.idcliente = ?");
 
                 $stm->execute(array($id));
+
+                return $stm->fetchAll(PDO::FETCH_OBJ);
+            } catch (\Throwable $th) {
+                die($th->getMessage());
+            }
+        }
+
+        public function ObtenerTallasClientes()
+        {
+            try {
+                $stm = $this->pdo->prepare("SELECT tc.idtalla AS idtallacliente, t.nombre AS talla, tc.detalle AS detalle FROM tallacliente AS tc INNER JOIN talla AS t ON tc.idtalla = t.idtalla");
+
+                $stm->execute();
 
                 return $stm->fetchAll(PDO::FETCH_OBJ);
             } catch (\Throwable $th) {
