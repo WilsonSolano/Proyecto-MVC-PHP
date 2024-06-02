@@ -1,6 +1,15 @@
 <?php
+    require_once 'model/TipoUsuario.php';
+
     class TipoUsuarioController
     {
+        public $model; 
+
+        public function __CONSTRUCT()
+        {
+            $this->model = new TipoUsuario;
+        }
+
         public function Index()
         {
             require_once 'view/pages/include/header_principal.php';

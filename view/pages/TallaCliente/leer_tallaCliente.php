@@ -35,6 +35,5 @@
     <div class="contrainer mt-3">
         <a href="?c=<?php echo base64_encode('TallaCliente').'& a='.base64_encode("insertar")?>" class="btn btn-primary" role="button">Insertar Datos</a>
     </div>
-
 </div>
 <!--Footer-->

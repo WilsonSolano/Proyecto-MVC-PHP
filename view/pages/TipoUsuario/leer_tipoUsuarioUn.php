@@ -1,38 +1,30 @@
     <!--Header-->
     <div class="container">
         <h3 class="display-7 text-center mb-4 mt-3">Listar Tipos de Usuario</h3>
-        <div class="input-group mb-2">
-            <span class="input-group-text" id="basic-addon1">ID Tipo de Usuario:</span>
-            <input type="text" class="form-control" placeholder="1234" aria-label="1234" aria-describedby="basic-addon1">
-            <input class="btn btn-primary" type="submit" value="Buscar">
+        <form action="?c=<?php echo base64_encode('TipoUsuario').'&a='.base64_encode('buscarTipoUsuario')?>" method="post">
+        <div class="form-floating mb-2">
+            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="idtipousuario">
+            <label for="floatingInput">Buscar tipo de usuario por ID</label>
         </div>
+        <button type="submit" class="btn btn-primary">Buscar</button>
+    </form>
 
-        <table class="table">
-            <thead>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">ID Tipo Usuario</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Descripción</th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php $r = $this->model->ObtenerTipoUsuario($_REQUEST["idtipousuario"]) ?>                
             <tr>
-                <th scope="col">ID Tipo Usuario</th>
-                <th scope="col">Nombre</th>
-                <th scope="col">Descripción</th>
+                <th scope="row"><?php echo $r->idtipousuario; ?></th>
+                <td><?php echo $r->nombre; ?></td>
+                <td><?php echo $r->descripcion; ?></td>
             </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Larry the Bird</td>
-                <td>1</td>
-            </tr>
-            </tbody>
-        </table>
-
+        </tbody>
+    </table>
     </div>
 <!--Footer-->

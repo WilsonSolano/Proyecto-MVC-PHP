@@ -20,7 +20,7 @@
         {
             try 
             {
-                $stm = $this->pdo->prepare("SELECT * FROM tiposusuarios");
+                $stm = $this->pdo->prepare("SELECT * FROM tipousuario");
                 $stm->execute();
                 return $stm->fetchAll(PDO::FETCH_OBJ);    
             } catch (\Throwable $th) {
@@ -32,7 +32,7 @@
         {
             try 
             {
-                $stm = $this->pdo->prepare("SELECT *FROM tiposusuario WHERE idtipousuario = ?");
+                $stm = $this->pdo->prepare("SELECT *FROM tipousuario WHERE idtipousuario = ?");
                 $stm->execute(array($id));
                 return $stm->fetch(PDO::FETCH_OBJ);
             } catch (\Throwable $th) {

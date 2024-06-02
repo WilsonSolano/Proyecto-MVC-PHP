@@ -26,7 +26,6 @@
                 <a class="nav-link dropdown-toggle fw-semibold fs-5 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Tipos de Usuario</a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="?c=<?php echo base64_encode('TipoUsuario')?>">Ver Datos</a></li>
-                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('TipoUsuario').'& a='.base64_encode("buscarTipoUsuario")?>">Buscar un Tipo de Usuario</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">

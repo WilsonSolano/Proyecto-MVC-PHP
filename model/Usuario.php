@@ -29,7 +29,7 @@
             try 
             {
                 $sql = "INSERT INTO usuario(nombre, apellido, telefono, email, clave, idpreguntasecreta, respuestasecreta, idtipousuario) VALUES (?,?,?,?,?,?,?,?)";
-                $this->pdo->prepare($sql)->execute(array($data->nombre, $data->apellido,$data->email,$data->clave,$data->idpreguntasecreta,$data->respuestasecreta,$data->idtipousuario));
+                $this->pdo->prepare($sql)->execute(array($data->nombre, $data->apellido,$data->telefono,$data->email,$data->clave,$data->idpreguntasecreta,$data->respuestasecreta,$data->idtipousuario));
             } catch (\Throwable $th) {
                 die($th->getMessage());
             }
@@ -39,7 +39,7 @@
         {
             try 
             {
-                $stm = $this->pdo->prepare("SELECT u.idusario AS idusario, u.nombre AS nombre, u.apellido AS apellido, u.telefono AS telefono, u.email AS email, tp.nombre AS tipo FROM usuario AS u INNER JOIN tiposusuario as tp on u.idtipousuario = tp.idtipousario WHERE u.estado = 1");
+                $stm = $this->pdo->prepare("SELECT u.idusuario AS idusuario, u.nombre AS nombre, u.apellido AS apellido, u.telefono AS telefono, u.email AS email, tp.nombre AS tipo FROM usuario AS u INNER JOIN tipousuario as tp on u.idtipousuario = tp.idtipousuario WHERE u.estado = 1;");
                 $stm->execute();
 
                 return $stm->fetchAll(PDO::FETCH_OBJ);
@@ -52,7 +52,7 @@
         {
             try 
             {
-                $stm = $this->pdo->prepare("SELECT u.idusario AS idusario, u.nombre AS nombre, u.apellido AS apellido, u.telefono AS telefono, u.email AS email, tp.nombre AS tipo FROM usuario AS u INNER JOIN tiposusuario as tp on u.idtipousuario = tp.idtipousario WHERE u.estado = 0");
+                $stm = $this->pdo->prepare("SELECT u.idusuario AS idusuario, u.nombre AS nombre, u.apellido AS apellido, u.telefono AS telefono, u.email AS email, tp.nombre AS tipo FROM usuario AS u INNER JOIN tipousuario as tp on u.idtipousuario = tp.idtipousuario WHERE u.estado = 0;");
                 $stm->execute();
 
                 return $stm->fetchAll(PDO::FETCH_OBJ);
@@ -73,11 +73,11 @@
             }
         }
 
-        public function ActualizarUsario($data)
+        public function ActualizarUsuario($data)
         {
             try {
-                $sql ="UPDATE usuario SET nombre= ?,apellido= ?,telefono= ?,email= ?,idtipousuario = ? WHERE ?";
-                $this->pdo->prepare($sql)->execute(array($data->nombre, $data->apellido, $data->telefono, $data->email, $data->idtipousario, $data->idusario));
+                $sql ="UPDATE usuario SET nombre= ?,apellido= ?,telefono= ?,email= ?,idtipousuario = ? WHERE idusuario= ?";
+                $this->pdo->prepare($sql)->execute(array($data->nombre, $data->apellido, $data->telefono, $data->email, $data->idtipousuario, $data->idusuario));
             } catch (\Throwable $th) {
                 die($th->getMessage());
             }
@@ -87,7 +87,7 @@
         {
             try 
             {
-                $sql = "UPDATE usuario SET estado = ? WHERE idusario = ?";
+                $sql = "UPDATE usuario SET estado = ? WHERE idusuario = ?";
 
                 $this->pdo->prepare($sql)->execute(array($nuevo_estado, $id));
             } catch (\Throwable $th) {
