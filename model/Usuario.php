@@ -65,7 +65,7 @@
         {
             try 
             {
-                $stm = $this->pdo->prepare("SELECT u.idusuario AS idusuario, u.nombre AS nombre, u.apellido AS apellido, u.telefono AS telefono, u.email AS email, u.idtipousario AS idtipousario, tp.nombre AS tipo, u.clave AS clave, u.idpreguntasecreta AS idpreguntasecreta, u.respuestasecreta AS respuestasecreta, ps.nombre AS pregunta FROM usario AS u INNER JOIN tipousario AS tp ON u.idtipousario = tp.idtipousario INNER JOIN preguntasecreta AS ps ON u.idpreguntasecreta = ps.idpreguntasecreta WHERE u.idusuario = ?");
+                $stm = $this->pdo->prepare("SELECT u.idusuario AS idusuario, u.nombre AS nombre, u.apellido AS apellido, u.telefono AS telefono, u.email AS email,u.estado, u.idtipousuario AS idtipousuario, tp.nombre AS tipo, u.clave AS clave, u.idpreguntasecreta AS idpreguntasecreta, u.respuestasecreta AS respuestasecreta, ps.nombre AS pregunta FROM usuario AS u INNER JOIN tipousuario AS tp ON u.idtipousuario = tp.idtipousuario INNER JOIN preguntasecreta AS ps ON u.idpreguntasecreta = ps.idpreguntasecreta WHERE u.idusuario = ?");
                 $stm->execute(array($id));
                 return $stm->fetch(PDO::FETCH_OBJ);
             } catch (\Throwable $th) {

@@ -46,6 +46,13 @@
             require_once 'view/pages/include/footer.php';
         }
 
+        public function leerUnUsuario()
+        {
+            require_once 'view/pages/include/header_principal.php';
+            require_once 'view/pages/Usuario/leerun_usuario.php';
+            require_once 'view/pages/include/footer.php';
+        }
+
         public function insertar()
         {
             $data = (object) array(
@@ -89,6 +96,26 @@
             //registrar los datos
             $this->model->CambiarEstadoUsuario($nuevo_estado, $id);
     
+            header('location: ?c='.base64_encode("Usuario"));
+        }
+
+        public function actualizarClaveUsuarioDB()
+        {
+            $id =$_REQUEST["idusuario"];
+            $clave=$_REQUEST["newcontrasena"];
+
+            $this->model->ActualizarClave($clave, $id);
+
+        }
+
+        public function actualizarPreguntaUsuarioDB()
+        {
+            $idusuario = $_REQUEST["idusuario"];
+            $idpreguntasecreta = $_REQUEST["idpreguntasecretausuario"];
+            $respuestasecreta = $_REQUEST["respuestausuario"];
+
+            $this->model->ActualizarPregunta($idpreguntasecreta,$respuestasecreta,$idusuario);
+        
             header('location: ?c='.base64_encode("Usuario"));
         }
     }
