@@ -17,10 +17,11 @@
         }
 
         //Registrar una talla
-        public function RegistrarTalla($data){
+        public function RegistrarTalla($nombreTalla)
+        {
             try {
                 $sql = "INSERT INTO talla(nombre) VALUES(?)";
-                $this->pdo->prepare($sql)->execute(array($data->nombre));
+                $this->pdo->prepare($sql)->execute(array($nombreTalla));
             } catch (\Throwable $th) {
                 die($th->getMessage());
             }
@@ -63,12 +64,12 @@
         }
 
         //Actualizar una talla
-        public function ActualizarTalla($data)
+        public function ActualizarTalla($nombre, $idtalla)
         {
             try {
                 $sql = "UPDATE talla SET nombre = ? WHERE idtalla = ?";
 
-                $this->pdo->prepare($sql)->execute(array($data->nombre, $data->idtalla));
+                $this->pdo->prepare($sql)->execute(array($nombre, $idtalla));
             } catch (\Throwable $th) {
                 die($th->getMessage());
             }
@@ -77,7 +78,7 @@
         //cambiar estado de una talla
         public function CambiarEstadoTalla($nuevo_estado, $id){
             try {
-                $sql = "UPDATE talla SET estado = ? WHERE idtalla ?";
+                $sql = "UPDATE talla SET estado = ? WHERE idtalla = ?";
                 $this->pdo->prepare($sql)->execute(array($nuevo_estado, $id));
             } catch (\Throwable $th) {
                 die($th->getMessage());

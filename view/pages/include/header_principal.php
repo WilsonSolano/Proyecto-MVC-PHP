@@ -43,8 +43,6 @@
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Talla').'& a='.base64_encode("InsertarTalla")?>">Crear Talla</a></li>
                     <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Talla')?>">Leer Tallas</a></li>
-                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Talla').'& a='.base64_encode("actualizarEstadoTalla")?>">Actualizar Estado de Talla</a></li>
-                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Talla').'& a='.base64_encode("actualizarTalla")?>">Actualizar Talla</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
