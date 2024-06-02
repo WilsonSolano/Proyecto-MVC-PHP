@@ -19,6 +19,7 @@
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="?c=<?php echo base64_encode('TallaCliente')?>">Ver Datos</a></li>
                     <li><a class="dropdown-item" href="?c=<?php echo base64_encode('TallaCliente').'& a='.base64_encode("insertar")?>">Insertar nueva Talla CLiente</a></li>
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('TallaCliente').'& a='.base64_encode("eliminarTallaCliente")?>">Eliminar Talla CLiente</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
