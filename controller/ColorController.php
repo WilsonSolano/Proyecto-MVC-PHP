@@ -1,5 +1,5 @@
 <?php
-    class ClienteController
+    class ColorController
     {
         public function Index()
         {
