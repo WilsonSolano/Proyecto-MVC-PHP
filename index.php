@@ -25,9 +25,9 @@
         #Cuando c tiene valor
         #decodificar el controller
         $controller = base64_decode($_REQUEST['c']);
+        #base64_decode($_REQUEST['a'])
 
-
-        $accion = isset($_REQUEST['a']) ? base64_decode($_REQUEST['a']) : 'Index';
+        $accion = isset($_REQUEST['a']) ? base64_decode($_REQUEST['a']): 'Index';
 
         #call of controller
         require_once 'controller/'.$controller.'Controller.php';
