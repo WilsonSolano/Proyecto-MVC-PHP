@@ -40,6 +40,18 @@
               </div>
 
             </div>
+
+            <div class="col-4">
+              <div class="card">
+                <div class="card-body">
+                  <a class="icon-link text-success" href="?c=<?php echo base64_encode('ColorFavorito'); ?>">
+                    <i class="bi-file-earmark-font-fill text-success" style="font-size: 4rem;"></i>
+                    ColorFavorito
+                </a>
+                </div>
+              </div>
+
+            </div>
             
             <div class="col-4">
               <div class="card">
