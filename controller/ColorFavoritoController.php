@@ -21,14 +21,14 @@
         public function Insertar()
         {
             require_once 'view/pages/include/header_principal.php';
-            require_once 'view/pages/colorfavorito/mostrar.php';
+            require_once 'view/pages/ColorFavorito/LeerColor.php';
             require_once 'view/pages/include/footer.php';
         }
 
         public function Eliminar()
         {
             require_once 'view/pages/include/header_principal.php';
-            require_once 'view/pages/colorfavorito/mostrar.php';
+            require_once 'view/pages/ColorFavorito/LeerColorFavorito.php';
             require_once 'view/pages/include/footer.php';
         }
     }
