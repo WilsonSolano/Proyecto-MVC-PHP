@@ -1,6 +1,12 @@
 <?php
+    require_once 'model/Cliente.php';
     class ClienteController
     {
+        public $model;
+        public function __construct()
+        {
+            $this->model=new Cliente;
+        }
         public function Index()
         {
             require_once 'view/pages/include/header_principal.php';
@@ -47,7 +53,7 @@
                 "idtipousuario" => $_REQUEST["idtipousuario"]
             );
 
-            $this->model->RegistrarUsuario($data);
+            $this->model->RegistrarCliente($data);
 
             header("Location:?c=".base64_encode("Cliente"));
         }
