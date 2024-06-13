@@ -22,7 +22,7 @@
             try {
                 $stm = $this->pdo->prepare("SELECT * FROM preguntasecreta");
                 $stm -> execute();
-                return $stm-> fethAll(PDO::FETCH_OBJ);
+                return $stm->fetchAll(PDO::FETCH_OBJ);
             } catch (\Throwable $t) {
                 die($t->getMessage());
             }

@@ -3,6 +3,9 @@
             <h2 class="display-6">---------ACTUALIZAR COLOR---------</h2>
         </div>    
     </header>
+    <form action="?c=<?php echo base64_encode('Color').'&a='.base64_encode('ActualizarColorDB')?>" method="post">
+        <main class="container ml-1 mr-5 mt-4 border border-success">
+            <h3 class="display-7 text-center mb-4 mt-3">Actualizar un Color</h3>
 
     <main class="container ml-1 mr-5 mt-4 border border-success">
         <h3 class="display-7 text-center mb-4 mt-3">Actualizar un Color</h3>

@@ -55,23 +55,34 @@
                 </ul>
             </li>
             <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fw-semibold fs-5 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" 
+                data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Color Favorito</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Color').'& a='.base64_encode("CrearColor")?>">Crear Color</a></li>
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Color')?>">Leer Colores</a></li>
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Color')?>.'& a='.base64_encode("ActualizarColor")?>Actualizar Color</a></li>
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Color')?>.'& a='.base64_encode("EliminarColor")?>Eliminar Color</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle fw-semibold fs-5 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">PreguntaSecreta</a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('PreguntaSecreta')?>.'& a='.base64_encode("CrearPreguntaSecreta")?>Crear Pregunta Secreta</a></li>
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('PreguntaSecreta').'& a='.base64_encode("CrearPreguntaSecreta")?>">Crear Pregunta Secreta</a></li>
                     <li><a class="dropdown-item" href="?c=<?php echo base64_encode('PreguntaSecreta')?>">Leer Preguntas Secretas</a></li>
-                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('PreguntaSecreta')?>.'& a='.base64_encode("ActualizarPreguntaSecreta")?>Actualizar Pregunta Secreta</a></li>
-                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('PreguntaSecreta')?>.'& a='.base64_encode("EliminarPreguntaSecreta")?>Eliminar Pregunta Secreta</a></li>
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('PreguntaSecreta').'& a='.base64_encode("ActualizarPreguntaSecreta")?>">Actualizar Pregunta Secreta</a></li>
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('PreguntaSecreta').'& a='.base64_encode("EliminarPreguntaSecreta")?>">Eliminar Pregunta Secreta</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle fw-semibold fs-5 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Cliente</a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Cliente')?>.'& a='.base64_encode("CrearCliente")?>Crear Cliente</a></li>
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Cliente').'& a='.base64_encode("CrearCliente")?>">Crear Cliente</a></li>
                     <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Cliente')?>">Leer Clientes</a></li>
-                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Cliente')?>.'& a='.base64_encode("ActualizarCliente")?>Actualizar Cliente</a></li>
-                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Cliente')?>.'& a='.base64_encode("EliminarCliente")?>Eliminar Cliente</a></li>
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Cliente').'& a='.base64_encode("ActualizarCliente")?>">Actualizar Cliente</a></li>
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Cliente').'& a='.base64_encode("EliminarCliente")?>">Eliminar Cliente</a></li>
                 </ul>
             </li>
+            
         </ul>
 
     </div>

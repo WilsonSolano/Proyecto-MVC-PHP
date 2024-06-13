@@ -1,5 +1,5 @@
 <?php
-    class ClienteController
+    class PreguntaSecretaController
     {
         public function Index()
         {

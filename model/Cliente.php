@@ -46,6 +46,19 @@
             }
         }
 
+        public function ListarClientesInactivos()
+        {
+            try 
+            {
+                $stm = $this->pdo->prepare("SELECT c.idcliente AS idcliente,c.nombre AS nombre, c.apellido AS apellido, c.telefono AS telefono, c.direccion AS direccion, c.email AS email, c.sexo AS sexo,DATE_FORMAT(c.fechanacimiento, '%d-%m-%Y')As fechanacimiento, TIMESTAMPDIFF(YEAR ,c.fechanacimiento,CURDATE()),AS edad, c.idusuarioregistro AS idusuarioregistro,u.apellido AS registradopor FROM cliente AS c INNER JOIN usuario AS u ON c.idusuarioresgistro=u.idusuario WHERE c.estado=0");
+                $stm->execute();
+
+                return $stm->fetchAll(PDO::FETCH_OBJ);
+            } catch (\Throwable $th) {
+                die($th->getMessage());
+            }
+        }
+
         public function ObtenerCliente($id){
             try {
                 $stm = $this->pdo->prepare("SELECT c.idcliente AS idcliente,c.nombre AS nombre, c.apellido AS apellido, c.telefono AS telefono, c.direccion AS direccion, c.email AS email, c.sexo AS sexo,DATE_FORMAT(c.fechanacimiento, '%d-%m-%Y')As fechanacimiento, c.idusuarioregistro AS idusuarioregistro,u.apellido AS registradopor FROM cliente AS c INNER JOIN usuario AS u ON c.idusuarioresgistro=u.idusuario WHERE idcliente=?");
