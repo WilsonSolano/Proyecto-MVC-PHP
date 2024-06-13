@@ -53,6 +53,18 @@
             }
         }
 
+        public function ObtenerTallas()
+        {
+            try {
+                $stm = $this->pdo->prepare("SELECT * FROM `talla`");
+                $stm->execute();
+
+                return $stm->fetchAll(PDO::FETCH_OBJ);
+            } catch (\Throwable $th) {
+                die($th->getMessage());
+            }
+        }
+        
         public function EliminarTallaCliente($id)
         {
             try {

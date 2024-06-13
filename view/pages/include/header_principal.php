@@ -33,9 +33,6 @@
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Usuario').'& a='.base64_encode("insertarUsuario")?>">Crear Usuario</a></li>
                     <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Usuario')?>">Leer Usuarios</a></li>
-                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Usuario').'& a='.base64_encode("actualizarUsuario")?>">Actualizar Usuario</a></li>
-                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Usuario').'& a='.base64_encode("actualizarClaveUsuario")?>">Actualizar clave de Usuario</a></li>
-                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Usuario').'& a='.base64_encode("actualizarPreguntaUsuario")?>">Actualizar pregunta de Usuario</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">

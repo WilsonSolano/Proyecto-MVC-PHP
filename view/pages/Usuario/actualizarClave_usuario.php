@@ -3,7 +3,7 @@
             <h3 class="display-7 text-center mb-4 mt-3">Actualizar Clave Usuario</h3>
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">ID Usuario:</span>
-                <input name="idusuario" type="number" class="form-control" name="idusario" placeholder="Ingrese el ID del usuario" aria-label="ID Usuario" aria-describedby="basic-addon1" required>
+                <input name="idusuario" type="text" class="form-control" name="idusario" placeholder="Ingrese el ID del usuario" aria-label="ID Usuario" aria-describedby="basic-addon1" required value="<?php echo base64_decode($_REQUEST["idusuario"])?>" readonly>
             </div>
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">Nueva Contraseña:</span>

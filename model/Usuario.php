@@ -61,6 +61,19 @@
             }
         }
 
+        public function ListarPreguntas()
+        {
+            try 
+            {
+                $stm = $this->pdo->prepare("SELECT * FROM `preguntasecreta`");
+                $stm->execute();
+
+                return $stm->fetchAll(PDO::FETCH_OBJ);
+            } catch (\Throwable $th) {
+                die($th->getMessage());
+            }
+        }
+
         public function ObtenerUsuario($id)
         {
             try 

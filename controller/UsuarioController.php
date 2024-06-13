@@ -106,6 +106,7 @@
 
             $this->model->ActualizarClave($clave, $id);
 
+            header('location: ?c='.base64_encode("Usuario"));
         }
 
         public function actualizarPreguntaUsuarioDB()

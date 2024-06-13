@@ -18,6 +18,9 @@
         <th scope="col">Email</th>
         <th scope="col">Tipo de Usuario</th>
         <th scope="col">DESACTIVAR</th>
+        <th scope="col">EDITAR</th>
+        <th scope="col">Actualizar Clave</th>
+        <th scope="col">Actualizar Pregunta</th>
     </tr>
     </thead>
     <tbody>
@@ -30,6 +33,9 @@
             <td><?php echo $r->email; ?></td>
             <td><?php echo $r->tipo; ?></td>
             <td><a onclick="javascript:return confirm('¿Está seguro que desea desactivar este Usuario?')" href="?c=<?php echo base64_encode('Usuario'); ?>&a=<?php echo base64_encode('CambiarEstado'); ?>&id=<?php echo base64_encode($r->idusuario); ?>&ne=<?php echo base64_encode('0'); ?>" title="Desactivar Usuario"><i class="bi bi-clipboard2-x-fill" style="font-size: 1.5rem; color: red;"></i></a></td>
+            <td><a href="?c=<?php echo base64_encode('Usuario'); ?>&a=<?php echo base64_encode('actualizarUsuario'); ?>&idusuario=<?php echo base64_encode($r->idusuario).'&nombre='.base64_encode($r->nombre).'&apellido='.base64_encode($r->apellido).'&telefono='.base64_encode($r->telefono).'&email='.base64_encode($r->email); ?>" title="Editar Usuario"><i class="bi-pen-fill" style="font-size: 1.5rem; color: cornflowerblue;"></i></a></td>
+            <td><a href="?c=<?php echo base64_encode('Usuario'); ?>&a=<?php echo base64_encode('actualizarClaveUsuario'); ?>&idusuario=<?php echo base64_encode($r->idusuario);?>" title="Editar Usuario"><i class="bi bi-key-fill" style="font-size: 2rem; color: black;"></i></a></td>
+            <td><a href="?c=<?php echo base64_encode('Usuario'); ?>&a=<?php echo base64_encode('actualizarPreguntaUsuario'); ?>&idusuario=<?php echo base64_encode($r->idusuario)?>" title="Editar Usuario"><i class="bi bi-patch-question-fill" style="font-size: 1.5rem; color: blue;"></i></a></td>
         </tr>
     <?php endforeach; ?>
     </tbody>
@@ -48,6 +54,9 @@
         <th scope="col">Email</th>
         <th scope="col">Tipo de Usuario</th>
         <th scope="col">ACTIVAR</th>
+        <th scope="col">EDITAR</th>
+        <th scope="col">Actualizar Clave</th>
+        <th scope="col">Actualizar Pregunta</th>
     </tr>
     </thead>
     <tbody>
@@ -60,6 +69,9 @@
             <td><?php echo $r->email; ?></td>
             <td><?php echo $r->tipo; ?></td>
             <td><a onclick="javascript:return confirm('¿Está seguro que desea activar este Usuario?')" href="?c=<?php echo base64_encode('Usuario'); ?>&a=<?php echo base64_encode('CambiarEstado'); ?>&id=<?php echo base64_encode($r->idusuario); ?>&ne=<?php echo base64_encode('1'); ?>" title="Activar Usuario"><i class="bi-check-circle-fill" style="font-size: 1.5rem; color: green;"></i></a></td>
+            <td><a href="?c=<?php echo base64_encode('Usuario'); ?>&a=<?php echo base64_encode('actualizarUsuario'); ?>&idusuario=<?php echo base64_encode($r->idusuario).'&nombre='.base64_encode($r->nombre).'&apellido='.base64_encode($r->apellido).'&telefono='.base64_encode($r->telefono).'&email='.base64_encode($r->email); ?>" title="Editar Usuario"><i class="bi-pen-fill" style="font-size: 1.5rem; color: cornflowerblue;"></i></a></td>
+            <td><a href="?c=<?php echo base64_encode('Usuario'); ?>&a=<?php echo base64_encode('actualizarClaveUsuario'); ?>&idusuario=<?php echo base64_encode($r->idusuario);?>" title="Editar Usuario"><i class="bi bi-key-fill" style="font-size: 2rem; color: black;"></i></a></td>
+            <td><a href="?c=<?php echo base64_encode('Usuario'); ?>&a=<?php echo base64_encode('actualizarPreguntaUsuario'); ?>&idusuario=<?php echo base64_encode($r->idusuario)?>" title="Editar Usuario"><i class="bi bi-patch-question-fill" style="font-size: 1.5rem; color: blue;"></i></a></td>
         </tr>
     <?php endforeach; ?>
     </tbody>
