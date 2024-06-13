@@ -48,10 +48,10 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle fw-semibold fs-5 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Color</a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Color')?>.'& a='.base64_encode("CrearColor")?>Crear Color</a></li>
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Color').'& a='.base64_encode("CrearColor")?>">Crear Color</a></li>
                     <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Color')?>">Leer Colores</a></li>
-                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Color')?>.'& a='.base64_encode("ActualizarColor")?>Actualizar Color</a></li>
-                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Color')?>.'& a='.base64_encode("EliminarColor")?>Eliminar Color</a></li>
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Color').'& a='.base64_encode("ActualizarColor")?>">Actualizar Color</a></li>
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Color').'& a='.base64_encode("EliminarColor")?>">Eliminar Color</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">

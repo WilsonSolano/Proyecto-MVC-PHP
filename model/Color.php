@@ -63,11 +63,11 @@
             }
         }       
 
-        public function ActualizarColor($data)
+        public function ActualizarColor($nombre, $idcolor)
         {
             try {
                 $sql= "UPDATE color SET nombre=? WHERE idcolor=?";
-                $this->pdo->prepare($sql)->execute(array($data->nombre,$data->idcolor));
+                $this->pdo->prepare($sql)->execute(array($nombre, $idcolor));
 
             } catch (\Throwable $t) {
                 die($t->getMessage());
