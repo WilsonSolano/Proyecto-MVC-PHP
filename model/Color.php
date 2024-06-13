@@ -16,11 +16,11 @@
             }
         }
 
-        public function ResgistrarColor($data)
+        public function ResgistrarColor($nombre)
         {
             try{
                 $sql = "INSERT INTO color(nombre) VALUES(?)";
-                $this->pdo->prepare($sql)->execute(array($data->nombre));    
+                $this->pdo->prepare($sql)->execute(array($nombre));    
             }
             catch(\throwable $t){
                 die($t->getMessage());

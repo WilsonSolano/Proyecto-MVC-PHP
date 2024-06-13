@@ -56,5 +56,13 @@
 
             header('location: ?c='.base64_encode("Color"));
         }
+
+        public function insertarColor(){
+            $newColor = $_REQUEST["newColor"];
+
+            $this->model->ResgistrarColor($newColor);
+
+            header('location: ?c='.base64_encode("Color"));
+        }
     }
 ?>
