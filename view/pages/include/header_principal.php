@@ -53,8 +53,8 @@
                 <a class="nav-link dropdown-toggle fw-semibold fs-5 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" 
                 data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Color Favorito</a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Color').'& a='.base64_encode("CrearColor")?>">Crear Color</a></li>
-                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Color')?>">Leer Colores</a></li>
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('ColorFavorito').'& a='.base64_encode("Insertar")?>">Crear Color</a></li>
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('ColorFavorito')?>">Leer Colores</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
@@ -66,11 +66,16 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle fw-semibold fs-5 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Cliente</a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Cliente').'& a='.base64_encode("CrearCliente")?>">Crear Cliente</a></li>
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Cliente').'&a='.base64_encode("CrearCliente")?>">Crear Cliente</a></li>
                     <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Cliente')?>">Leer Clientes</a></li>
                 </ul>
             </li>
-            
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fw-semibold fs-5 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Sesion</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Usuario').'&a='.base64_encode("cerrarSesion")?>">Cerrar Sesion</a></li>
+                </ul>
+            </li>
         </ul>
 
     </div>

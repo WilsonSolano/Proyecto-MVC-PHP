@@ -119,5 +119,10 @@
         
             header('location: ?c='.base64_encode("Usuario"));
         }
+
+        public function cerrarSesion()
+        {
+            header('location: ?c='.base64_encode("Login"));
+        }
     }
 ?>
