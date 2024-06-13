@@ -3,10 +3,12 @@
     class ClienteController
     {
         public $model;
+
         public function __construct()
         {
             $this->model=new Cliente;
         }
+
         public function Index()
         {
             require_once 'view/pages/include/header_principal.php';
@@ -43,14 +45,14 @@
         public function insertar()
         {
             $data = (object) array(
-                "idusuario" => $_REQUEST["idcliente"],
                 "nombre" => $_REQUEST["nombrecliente"],
                 "apellido" => $_REQUEST["apellidocliente"],
+                "direccion" => $_REQUEST["direccioncliente"],
                 "telefono" => $_REQUEST["telefonocliente"],
                 "email" => $_REQUEST["emailcliente"],
                 "sexo"=> $_REQUEST["sexocliente"],
                 "fechanacimiento"=>$_REQUEST["fechanacimientocliente"],
-                "idtipousuario" => $_REQUEST["idtipousuario"]
+                "idusuarioregistro" => $_REQUEST["idusuarioregistro"]
             );
 
             $this->model->RegistrarCliente($data);
@@ -58,17 +60,17 @@
             header("Location:?c=".base64_encode("Cliente"));
         }
 
-        public function actualizarDatosUsuario()
+        public function actualizarDatosCliente()
         {
             $data = (object) array(
-                "idusuario" => $_REQUEST["idcliente"],
-                "nombre" => $_REQUEST["nombrecliente"],
-                "apellido" => $_REQUEST["apellidocliente"],
-                "telefono" => $_REQUEST["telefonocliente"],
-                "email" => $_REQUEST["emailcliente"],
-                "sexo"=> $_REQUEST["sexocliente"],
-                "fechanacimiento"=>$_REQUEST["fechanacimientocliente"],
-                "idtipousuario" => $_REQUEST["idtipousuario"]
+                "idcliente" => $_POST['idcliente'],
+                "nombre" => $_POST['nombre'],
+                "apellido" => $_POST['apellido'],
+                "telefono" => $_POST['telefono'],
+                "direccion" => $_POST['direccion'],
+                "email" => $_POST['email'],
+                "sexo" => $_POST['sexo'],
+                "fechanacimiento" => $_POST['fechanacimiento'],
             );
 
             $this->model->ActualizarCliente($data);

@@ -76,8 +76,6 @@
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Cliente').'& a='.base64_encode("CrearCliente")?>">Crear Cliente</a></li>
                     <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Cliente')?>">Leer Clientes</a></li>
-                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Cliente').'& a='.base64_encode("ActualizarCliente")?>">Actualizar Cliente</a></li>
-                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Cliente').'& a='.base64_encode("EliminarCliente")?>">Eliminar Cliente</a></li>
                 </ul>
             </li>
             

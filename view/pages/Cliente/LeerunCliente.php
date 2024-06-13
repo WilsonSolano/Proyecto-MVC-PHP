@@ -18,7 +18,8 @@
         <th scope="col">Email</th>
         <th scope="col">Sexo</th>
         <th scope="col">Fecha de nacimiento</th>
-        <th scope="col">Estado</th>
+        <th scope="col">ID usuario</th>
+        <th scope="col">Registrado por</th>
     </tr>
     </thead>
     <tbody>
@@ -30,10 +31,10 @@
                 <td><?php echo $r->telefono; ?></td>
                 <td><?php echo $r->email; ?></td>
                 <td><?php echo $r->direccion;?></td>
-                <td><?php echo $r->Sexo;?></td>
+                <td><?php echo $r->sexo;?></td>
                 <td><?php echo $r->fechanacimiento?>
-                <td><?php echo $r->estado == 1 ? "Activo" : "Inactivo"; ?></td>
-                <td><?php echo $r->tipo; ?></td>
+                <td><?php echo $r->idusuario?>
+                <td><?php echo $r->registradopor?>
             </tr>
     </tbody>
 </table>
