@@ -1,6 +1,6 @@
 <?php
 
-    require_once 'model/ColorFavoritoController.php';
+    require_once 'model/ColoFavorito.php';
 
     class ColorFavoritoController
     {
