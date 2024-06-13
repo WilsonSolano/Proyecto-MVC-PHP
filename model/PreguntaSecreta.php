@@ -29,11 +29,11 @@
         }
 
         //buscar un registro por id
-        public function ObtenerPreguntaSecreta($id)
+        public function ObtenerPreguntaSecreta($idpreguntasecreta)
         {
             try {
                 $stm = $this->pdo->prepare("SELECT * FROM preguntasecreta WHERE idpreguntasecreta = ?");
-                $stm -> execute(array($id));
+                $stm -> execute(array($idpreguntasecreta));
 
                 return $stm -> fetch(PDO::FETCH_OBJ);
             } catch (\Throwable $t) {

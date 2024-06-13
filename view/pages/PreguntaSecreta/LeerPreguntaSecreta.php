@@ -1,34 +1,33 @@
+    <!--Header-->
 
-<div class="container text-center mt-3">
-            <h1 class="display-4">PROYECTO FINAL - DESARROLLO WEB</h1>
-            <h2 class="display-6">---------LISTAR PRREGUNTA SECRETA---------</h2>
-        </div>    
-    </header>
+    <div class="container">
 
-    <main class="container ml-1 mr-5 mt-4 border border-success">
-        <h3 class="display-7 text-center mb-4 mt-3">Listar Clientes</h3>
+<!--Header-->
+<div class="container">
+<h3 class="display-7 text-center mb-4 mt-3">Listar Tipos de Pregunta Secreta</h3>
+<form action="?c=<?php echo base64_encode('PreguntaSecreta').'&a='.base64_encode('buscarPreguntaS')?>" method="post">
+    <div class="form-floating mb-2">
+      <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="idpreguntasecreta">
+      <label for="floatingInput">Buscar tipo de Pregunta Secreta por ID</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Buscar</button>
+</form>
 
-        <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">ID preguntaSecreta</th>
-                <th scope="col">Pregunta Secreta</th>
-                <th scope="col">Estado</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Como se llama tu primer mascota</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Cual es el nombre de tu abuelita</td>
-                <td>1</td>
-              </tr>
-              
-            </tbody>
-          </table>
-    </main>
-</html>
+<table class="table">
+    <thead>
+    <tr>
+      <th scope="col">ID Pregunta</th>
+      <th scope="col">Pregunta</th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php foreach($this->model->ListarPreguntaSecretas() as $r): ?>                
+        <tr>
+          <th scope="row"><?php echo $r->idpreguntasecreta; ?></th>
+          <td><?php echo $r->nombre; ?></td>
+        </tr>
+    <?php endforeach; ?>
+    </tbody>
+</table>
+</div>
+<!--Footer-->
