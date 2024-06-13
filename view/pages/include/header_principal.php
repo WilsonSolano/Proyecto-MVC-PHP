@@ -58,8 +58,6 @@
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Color').'& a='.base64_encode("CrearColor")?>">Crear Color</a></li>
                     <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Color')?>">Leer Colores</a></li>
-                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Color').'& a='.base64_encode("ActualizarColor")?>">Actualizar Color</a></li>
-                    <li><a class="dropdown-item" href="?c=<?php echo base64_encode('Color').'& a='.base64_encode("EliminarColor")?>">Eliminar Color</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
