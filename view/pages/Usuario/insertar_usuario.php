@@ -34,7 +34,12 @@
 
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">ID pregunta Secreta</label>
-                <input name="idpreguntasecretausuario" type="number" class="form-control" id="exampleFormControlInput1" placeholder="123">
+                <select class="form-select" aria-label="Default select example" required name="idpreguntasecretausuario">
+                    <option value selected disabled>Seleccione la pregunta</option>
+                <?php foreach($this->model->ListarPreguntas() as $r):?>
+                    <option value="<?php echo $r->idpreguntasecreta?>"><?php echo $r->nombre?></option>
+                <?php endforeach?>
+                </select>
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Respuesta a pregunta secreta</label>
